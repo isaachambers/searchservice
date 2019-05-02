@@ -5,7 +5,7 @@ import java.io.Serializable;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-@Document(type = "customer", indexName = "customerIndex", shards = 2)
+@Document(type = "customer", indexName = "customerindex", shards = 2)
 public class Customer implements Serializable {
 
 	private static final long serialVersionUID = 1L;
