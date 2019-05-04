@@ -24,6 +24,11 @@ public class CustomerSearchService {
 		return this.customerRepository.count();
 	}
 
+	public long saveCustomer(Customer customer) {
+		this.customerRepository.save(customer);
+		return this.customerRepository.count();
+	}
+
 	public List<Customer> getAllCustomers() {
 		List<Customer> customers = new ArrayList<>();
 		this.customerRepository.findAll().forEach(customer -> {
